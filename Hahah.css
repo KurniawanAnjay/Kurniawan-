@@ -1,0 +1,25 @@
+input {
+    padding: 30px;
+    background-color: transparent;
+    border: 2px solid#fcc23f;
+    border-radius: 5px;
+    width: 300px;
+    color: #eee;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+label {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    padding: 0 4px;
+    color=:#fcc23f;
+    background-color: #0d1019;
+    transition: all 0 2s ease;
+    pointer-events: none;
+}
+input:not(:placeholder-shown)~label,
+inpu :focus-label{
+    top:-8px;
+    font-size: 13px;
+}
